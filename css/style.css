@@ -400,6 +400,11 @@ h5{
     padding: 0 8%;
 }
 
+.js--doctors p{
+    text-align: justify;
+    margin-top: 3%;
+}
+
 .js--doctors h4{
     padding-top: 4%;
 }
@@ -623,7 +628,6 @@ h5{
 /*--------------------------*/
 .footer-section{
     background-color: #4D4644;
-    height: 300px;
     font-family: 'Marmelad', sans-serif;
 }
 
