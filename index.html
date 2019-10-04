@@ -23,8 +23,11 @@
                     <div class="tel-nummer">
                         <p><i class="fas fa-phone"></i> Позвоните нам 8-800-550-5342</p>
                     </div>
-                    <div class="express-form">
+                    <div class="express-form express-popup">
                         <a href="#"><i class="fas fa-pen"></i> Отправьте нам заявку</a>
+                    </div>
+                    <div class="bookmark express-form">
+                        <a href="#"><i class="fas fa-star"></i> Добавьте нас в избранное</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +37,7 @@
                 <h2>Постоянные боли в колене<span class="hero-highlight question">?</span></h2>
                 <h2>Обострение болей после травм<span class="hero-highlight question">?</span></h2>
                 <h1>Одна поездка в Мюнхен, и вы забудете о них навсегда<span class="hero-highlight">.</span></h1>
-                <a href="#" class="btn hero-btn">Отправить экспресс-заявку</a>
+                <a href="#" class="btn hero-btn express-popup">Отправить экспресс-заявку</a>
             </div>
         </div>
     </header>
@@ -49,8 +52,8 @@
                 <ul id="whyus-twocol"></ul>
             </div>
             <div>
-                <div class="container-btn">
-                    <a href="#" class="btn whyus-btn">Заполнить чек-лист болей и травм и получить предварительный расчет стоимости</a>
+                <div class="container-btn"  id="whyus">
+                    <a href="#whyus" class="btn whyus-btn check-list-popup">Заполнить чек-лист болей и травм и получить предварительный расчет стоимости</a>
                 </div>
             </div>
     </section>
@@ -63,12 +66,12 @@
                 <img class="slides animate-left" src="img/slide04.png" alt="Лечение плечевого сустава">
                 <img class="slides animate-left" src="img/slide05.png" alt="Лечение коленей">
             </div>
-            <div class="treatment-text">
+            <div class="treatment-text" id="treatment">
                 <h3>Что мы лечим<span class="highlight">?</span> </h3>
-                <h4>Консервативное лечение. Хирургия. Терапия стволовыми клетками.</h4>
+                <h4>Консервативное лечение. Хирургия. Терапия и лечение стволовыми клетками.</h4>
                 <p>Травмы коленей. Боли в спине, в том числе неопределенного происхождения. Хирургия и протезирование тазобедренных суставов, ступней, голеностопа. Лечение рук и кистей. Травмы плеча и локтевого сустава. Вальгусная деформация первого пальца стопы. Спортивные травмы.</p>
                 <div>
-                    <a href="#" class="btn treatment-btn">Задать вопрос эксперту</a>
+                    <a href="#treatment" class="btn treatment-btn question-popup">Задать вопрос эксперту</a>
                 </div>
             </div>
         </div>
@@ -80,8 +83,8 @@
             <div class="js--doctors">
                 <ul id="doctors"></ul>
             </div>
-            <div class="doctor-btn">
-                <a href="#" class="btn doctor-btn">Записаться к врачу</a>
+            <div class="doctor-btn" id="doctor">
+                <a href="#doctor" class="btn doctor-btn check-list-popup">Записаться к врачу</a>
             </div>
         </div>
     </section>
@@ -104,7 +107,7 @@
                 <div class="fifth-step step text-right">
                     <p>Здоровым и отдохнувшим вернуться домой.</p>
                 </div>
-                <div class="minus">
+                <div class="minus"  id="step">
                     <div class="minus-left first-minus"></div>
                     <div class="minus-right second-minus"></div>
                     <div class="minus-left third-minus"></div>
@@ -114,7 +117,7 @@
                 </div>  
             </div>
             <div class="doctor-btn">
-                <a href="#" class="btn doctor-btn">Задать вопрос специалисту</a>
+                <a href="#step" class="btn doctor-btn question-popup">Задать вопрос специалисту</a>
             </div>
         </div>
     </section>
@@ -122,11 +125,11 @@
         <div class="feedback-container">
             <h3>Что о нас говорят пациенты<span class="highlight">?</span></h3>
             <div class="js--feedback">
-                <ul class="three-col" id="feedbacks"></ul>
+                <ul class="js--feedback-container" id="feedbacks"></ul>
             </div>
-            <h2 class="questions">Остались вопросы?</h2>
+            <h2 class="questions" id="questions">Остались вопросы?</h2>
             <div class="feedback-btn">
-                <a href="#" class="btn feedback-btn">Задать вопрос</a>
+                <a href="#questions" class="btn feedback-btn question-popup">Задать вопрос</a>
             </div>
             <p>или мы ответим вам по телефону, звонок в Германию бесплатный</p>
             <h2>8-800-550-5342</h2>
@@ -135,15 +138,15 @@
     <section class="footer-section">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="img/logo_wort.png">
+                <img src="img/logo_wort.png" alt="Логотип Юниса">
             </div>
             <div class="contact">
                 <h2>Свяжитесь с нами</h2>
                 <p>8-800-550-53-42</p>
                 <p>info@junisa.de</p>
                 <div class="icons">
-                    <a href="#"><img src="img/icons_fb.png"></a>
-                    <a href="#"><img src="img/icons_website.png"></a>
+                    <a href="https://www.facebook.com/JunisaDeutschland/" target="blank"><img src="img/icons_fb.png" alt="Логотип Фейсбука"></a>
+                    <a href="https://junisa.ru/ru-ru" target="blank"><img src="img/icons_website.png" alt="Домой"></a>
                 </div>
             </div>
             <div class="rechts">
@@ -151,11 +154,174 @@
                 <p>®Junisa GmbH 2019</p>
                 <p class="margin">Leopoldstraße 29, 80802 München</p>
                 <br>
-                <a href="#">Защита данных</a><br>
-                <a href="#">Реквизиты</a>
+                <a href="https://junisa.ru/ru-ru/zashchita-dannykh" target="blank">Защита данных</a><br>
+                <a href="https://junisa.ru/ru-ru/rekvizity" target="blank">Реквизиты</a>
             </div>
         </div>
     </section>
+
     <script src="js/app.js"></script>
+
+    <section class="pop-ups">
+        <div class="express-form-box">
+            <form accept-charset="UTF-8" action="https://lv586.infusionsoft.com/app/form/process/b05d4babbdbf9a6e50484048aa5ddf31" class="infusion-form" id="inf_form_b05d4babbdbf9a6e50484048aa5ddf31" method="POST">
+                <input name="inf_form_xid" type="hidden" value="b05d4babbdbf9a6e50484048aa5ddf31" />
+                <input name="inf_form_name" type="hidden" value="Express Form" />
+                <input name="infusionsoft_version" type="hidden" value="1.70.0.134195" />
+                <div class="infusion-field">
+                    <input class="infusion-field-input" id="inf_field_Email" name="inf_field_Email" placeholder="Введите ваш Email *" type="text" />
+                </div>
+                <div class="infusion-field">
+                    <input class="infusion-field-input" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Введите ваш телефон *" type="text" />
+                </div>
+                <div class="infusion-submit">
+                    <button class="infusion-recaptcha is-btn" id="recaptcha_b05d4babbdbf9a6e50484048aa5ddf31" type="submit">Свяжитесь со мной</button>
+                    <p class="disclaimer">Мы не рассылаем спам и не передаем информацию третьим лицам</p>
+                </div>
+            </form>
+            <script type="text/javascript" src="https://lv586.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+            <script type="text/javascript" src="https://lv586.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.134195"></script>
+            <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
+            <script type="text/javascript" src="https://lv586.infusionsoft.com/app/timezone/timezoneInputJs?xid=b05d4babbdbf9a6e50484048aa5ddf31"></script>
+        </div>
+        <div class="question-form-box">
+            <form accept-charset="UTF-8" action="https://lv586.infusionsoft.com/app/form/process/972c56e018def14072cf9be9fef57ef2" class="infusion-form" id="inf_form_972c56e018def14072cf9be9fef57ef2" method="POST">
+                <input name="inf_form_xid" type="hidden" value="972c56e018def14072cf9be9fef57ef2" />
+                <input name="inf_form_name" type="hidden" value="Form Question" />
+                <input name="infusionsoft_version" type="hidden" value="1.70.0.134195" />
+                <h2 class="your-question">Мы свяжемся с вами в ближайшее время</h2>
+                <div class="infusion-field">
+                    <input class="infusion-field-input" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="Введите ваше имя" type="text" />
+                </div>
+                <div class="infusion-field">
+                    <input class="infusion-field-input" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Введите ваш телефон *" type="text" />
+                </div>
+                <div class="infusion-field">
+                    <input class="infusion-field-input" id="inf_field_Email" name="inf_field_Email" placeholder="Введите ваш Email *" type="text" />
+                </div>
+                <div class="infusion-field">
+                    <input class="infusion-field-input question-input" id="inf_custom_Notes" name="inf_custom_Notes" placeholder="Здесь вы можете написать ваш вопрос" type="text" />
+                </div>
+                <div class="infusion-submit">
+                    <button class="infusion-recaptcha is-btn" id="recaptcha_972c56e018def14072cf9be9fef57ef2" type="submit">Задать вопрос</button>
+                    <p class="disclaimer">Мы не рассылаем спам и не передаем информацию третьим лицам</p>
+                </div>
+            </form>
+            <script type="text/javascript" src="https://lv586.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+            <script type="text/javascript" src="https://lv586.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.134195"></script>
+            <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
+            <script type="text/javascript" src="https://lv586.infusionsoft.com/app/timezone/timezoneInputJs?xid=972c56e018def14072cf9be9fef57ef2"></script>
+        </div>
+        <div class="check-list-form-box">
+                <form accept-charset="UTF-8" action="https://lv586.infusionsoft.com/app/form/process/a496522b939831affc7f626f2456d2b6" class="infusion-form" id="inf_form_a496522b939831affc7f626f2456d2b6" method="POST">
+                    <input name="inf_form_xid" type="hidden" value="a496522b939831affc7f626f2456d2b6" />
+                    <input name="inf_form_name" type="hidden" value="Check List" />
+                    <input name="infusionsoft_version" type="hidden" value="1.70.0.134195" />
+                    <h2 class="your-question">Мы свяжемся с вами в ближайшее время</h2>
+                    <div class="infusion-field">
+                        <input class="infusion-field-input" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="Ваше имя" type="text" />
+                    </div>
+                    <div class="infusion-field">
+                        <input class="infusion-field-input" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Ваш телефон *" type="text" />
+                    </div>
+                    <div class="infusion-field">
+                        <input class="infusion-field-input" id="inf_field_Email" name="inf_field_Email" placeholder="Ваш Email *" type="text" />
+                    </div>
+                    <div class="infusion-field">
+                        <label for="inf_option_Какиеболивасбеспокоят"><h2>Какие боли вас беспокоят?  *</h2></label>
+                        <div class="infusion-radio">
+                            <div class="options-container">
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_287" name="inf_option_Какиеболивасбеспокоят" type="radio" value="287" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_287">Боли/травма в коленях</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_289" name="inf_option_Какиеболивасбеспокоят" type="radio" value="289" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_289">Боли/травма в голеностопе</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_291" name="inf_option_Какиеболивасбеспокоят" type="radio" value="291" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_291">Боли/травма позвоночника</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_293" name="inf_option_Какиеболивасбеспокоят" type="radio" value="293" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_293">Межпозвонковая грыжа</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_295" name="inf_option_Какиеболивасбеспокоят" type="radio" value="295" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_295">Боли/травма в локте</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_305" name="inf_option_Какиеболивасбеспокоят" type="radio" value="305" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_305">Боли в кисти рук</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_297" name="inf_option_Какиеболивасбеспокоят" type="radio" value="297" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_297">Боли/травма в плечевом суставе</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_299" name="inf_option_Какиеболивасбеспокоят" type="radio" value="299" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_299">Вальгусная деформация первого пальца стопы</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_301" name="inf_option_Какиеболивасбеспокоят" type="radio" value="301" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_301">Боли в тазобедренном суставе</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Какиеболивасбеспокоят_303" name="inf_option_Какиеболивасбеспокоят" type="radio" value="303" />
+                                    <label for="inf_option_Какиеболивасбеспокоят_303">В списке нет правильного ответа</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infusion-field">
+                        <label for="inf_option_Меняинтересуте"><h2>Какие процедуры вас интересуют? *</h2></label>
+                        <div class="infusion-radio">
+                            <div class="options-container">
+                                <span class="infusion-option">
+                                    <input id="inf_option_Меняинтересуте_307" name="inf_option_Меняинтересуте" type="radio" value="307" />
+                                    <label for="inf_option_Меняинтересуте_307">Хирургическая операция</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Меняинтересуте_309" name="inf_option_Меняинтересуте" type="radio" value="309" />
+                                    <label for="inf_option_Меняинтересуте_309">Малоинвазивная хирургическая операция</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Меняинтересуте_311" name="inf_option_Меняинтересуте" type="radio" value="311" />
+                                    <label for="inf_option_Меняинтересуте_311">Протезирование</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Меняинтересуте_313" name="inf_option_Меняинтересуте" type="radio" value="313" />
+                                    <label for="inf_option_Меняинтересуте_313">Консервативное (безоперационное) лечение</label>
+                                </span>
+                                <span class="infusion-option">
+                                    <input id="inf_option_Меняинтересуте_315" name="inf_option_Меняинтересуте" type="radio" value="315" />
+                                    <label for="inf_option_Меняинтересуте_315">Терапия/лечение стволовыми клетками</label>
+                                </span>
+                                <span class="infusion-option">
+                                        <input id="inf_option_Меняинтересуте_317" name="inf_option_Меняинтересуте" type="radio" value="317" />
+                                        <label for="inf_option_Меняинтересуте_317">Затрудняюсь сказать</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="infusion-field">
+                        <input class="infusion-field-input check-list-input" id="inf_custom_Notes" name="inf_custom_Notes" placeholder="Здесь вы можете описать все подробнее" type="text" />
+                    </div>
+                    <div>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="infusion-submit">
+                        <button class="infusion-recaptcha is-btn" id="recaptcha_a496522b939831affc7f626f2456d2b6" type="submit">Отправить для расчета</button>
+                        <p class="disclaimer">Мы не рассылаем спам и не передаем информацию третьим лицам</p>
+                    </div>
+                </form>
+                <script type="text/javascript" src="https://lv586.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+                <script type="text/javascript" src="https://lv586.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.134195"></script>
+                <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
+                <script type="text/javascript" src="https://lv586.infusionsoft.com/app/timezone/timezoneInputJs?xid=a496522b939831affc7f626f2456d2b6"></script>
+        </div>
+    </section>
+    <script src="js/forms.js"></script>
 </body>
 </html>

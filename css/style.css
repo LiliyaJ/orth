@@ -90,7 +90,7 @@ section{
 /*--------Headers---------- */
 
 h1{
-    font-size: 260%;
+    font-size: 200%;
 }
 
 h1,
@@ -126,10 +126,9 @@ h5{
     display: block;
     cursor: pointer;
     border-radius: 9px;
-    font-size: 1.1em;
     font-weight: 500;
     text-align: center;
-    letter-spacing: .02em;
+    letter-spacing: .02%;
     padding: 3% 3%;
     color: #fff;
 }
@@ -150,7 +149,7 @@ h5{
 /*--------------------------*/
 .menu{
     display: grid;
-    grid-template-columns: 16% 84%;
+    grid-template-columns: 20% 80%;
     width: 100%;
     padding: .2% 2% 1%;
     background-color: #f0faff;
@@ -167,13 +166,14 @@ h5{
 }
 .contacts{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 60%;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
     align-self: flex-end;
     color: #4D4644;
     font-weight: 600;
     font-size: 110%;
     margin-left: 10%;
+    justify-items: center;
 }
 
 .express-form a:link,
@@ -187,22 +187,13 @@ h5{
     cursor: pointer;
 }
 
-/* Sticky navi */ 
-.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.938);
-}
-
 /*--------------------------*/
 /* HERO */
 /*--------------------------*/
 
 .hero{
     display: grid;
-    grid-template-columns: 38% 62%;
+    grid-template-columns: 40% 60%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .3)), url(img/op.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -303,13 +294,9 @@ h5{
     background-color: #f0faff;
 }
 
-.treatment-container .two-col{
-    margin-top: 0;
-}
-
 .slide-list img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 .treatment-text{
@@ -324,8 +311,9 @@ h5{
 }
 
 .treatment-btn{
-    width: 100%;
+    width: 80%;
     margin-top: 6%;
+    margin-bottom: 20%;
 }
 
 /* Animation */
@@ -383,7 +371,7 @@ h5{
 .js--doctors ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto;
     grid-gap: 2%; 
 }
 
@@ -407,23 +395,42 @@ h5{
 
 .js--doctors h4,
 .js--doctors h5,
-.js--doctors p{
+.js--doctors p,
+.doctor-star{
     padding: 0 8%;
 }
 
-.js--doctors h4,
-.js--doctors p{
+.js--doctors h4{
     padding-top: 4%;
 }
 
-.js--doctors p{
-    padding-bottom: 6%; 
+.doctor-price{
+    margin-bottom: 8%;
+}
+
+.doctor-star{
+    width: 46%;
+    height: auto;
+}
+
+.doctor-seniority{
+    margin-top: 8%;
+    
+}
+
+.js--doctors h5{
+    font-size: 100%;
+}
+
+.js--doctors h4{
+    font-size: 120%;
+    margin-bottom: 2%;
 }
 
 .doctor-btn{
     width: 60%;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 16%;
 }
 
 /*--------------------------*/
@@ -559,9 +566,16 @@ h5{
     padding: 4% 6%;
 }
 
+.js--feedback-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2% 2%; 
+    padding-top: 4%;
+}
+
 .feedback-container li{
     display: block;
-    padding: 6%;
+    padding: 8%;
     text-align: justify;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     border-radius: 10px;
@@ -574,6 +588,7 @@ h5{
 .feedback-img{
     display: block;
     width: 20%;
+    margin-left: 40%;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -600,6 +615,7 @@ h5{
 .feedback-container h2,
 .feedback-container p{
     text-align: center;
+    font-size: 120%;
 }
 
 /*--------------------------*/
@@ -608,6 +624,7 @@ h5{
 .footer-section{
     background-color: #4D4644;
     height: 300px;
+    font-family: 'Marmelad', sans-serif;
 }
 
 .footer-container{
@@ -630,16 +647,111 @@ h5{
 }
 
 .icons img{
-    width: 16%;
-    padding: 3%;
+    width: 8%;
+    margin: 1% 1% 0 0;
 }
 
 .rechts a{
     color: #fff;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .rechts a:hover,
 .techts a:active{
     color: #999796;
+}
+
+/*--------------------------*/
+/* FORMS */
+/*--------------------------*/
+
+.express-form-box,
+.question-form-box,
+.check-list-form-box{
+    display: none;
+    justify-self: center;
+    text-align: center;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    position: fixed;
+    z-index: 0;
+    overflow: visible;
+    background-color: #f0faff;
+}
+
+.express-form-box,
+.question-form-box{
+    padding: 6%;
+    top: 10%;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.check-list-form-box{
+    padding: 3%;
+    top: 0;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.infusion-field,
+.infusion-submit{
+    padding: 1%;
+}
+
+.infusion-field h2{
+    text-align: left;
+    margin: 2% 0;
+}
+
+.infusion-field-input,
+.is-btn{
+    width: 100%;
+    padding: 3%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.check-list-form-box .infusion-field-input,
+.check-list-form-box .is-btn{
+    padding: 2%;
+    width: 80%;
+}
+
+.is-btn{    
+    background-color: #e69e6c;
+    color: #fff;
+}
+
+.is-btn:hover,
+.is-btn:active{
+    background-color: #cc8756;
+}
+
+.disclaimer{
+    display: block;
+    font-size: 80%;
+}
+
+.question-input{
+    padding-bottom: 16%;
+}
+
+.your-question{
+    margin-bottom: 3%;
+    color: #4D4644;
+}
+
+.options-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3% 2%;
+    text-align: left;
 }
