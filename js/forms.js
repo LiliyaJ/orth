@@ -38,7 +38,7 @@ function closeBoxIfClickedOutside(){
     if(express_form.style.display==='block' || question_form.style.display === 'block'|| cl_form.style.display === 'block'){
         document.addEventListener("click", function(event) {
             // If user clicks inside the element, do nothing
-            if (event.target.closest('.express-form-box') || event.target.closest('.express-popup') || event.target.closest('.question-form-box') || event.target.closest('.question-popup') || event.target.closest('.check-list-popup') || event.target.closest('.check-list-popup')) {
+            if (event.target.closest('.express-form-box') || event.target.closest('.express-popup') || event.target.closest('.question-form-box') || event.target.closest('.question-popup') || event.target.closest('.check-list-popup') || event.target.closest('.check-list-form-box')) {
                 return;
             }else{
             // If user clicks outside the element, hide it!

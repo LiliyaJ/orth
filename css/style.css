@@ -161,9 +161,10 @@ h5{
 }
 
 .logo img{
-    width: 100%;
+    width:80%;
     height: auto;
 }
+
 .contacts{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -292,6 +293,9 @@ h5{
 
 .treatment{
     background-color: #f0faff;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
 }
 
 .slide-list img{
@@ -554,8 +558,9 @@ h5{
     background-position-x: left;
 }
 
-.steps-container .doctor-btn{
-   margin: 3% 20%;
+.step-btn{
+    width: 60%;
+    margin: 0 20% 6%;
 }
 
 /*--------------------------*/
@@ -683,7 +688,9 @@ h5{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     position: fixed;
     z-index: 0;
-    overflow: visible;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-color: #f0faff;
 }
 
@@ -709,7 +716,7 @@ h5{
 
 .infusion-field h2{
     text-align: left;
-    margin: 2% 0;
+    margin: 3% 0;
 }
 
 .infusion-field-input,
@@ -758,4 +765,65 @@ h5{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3% 2%;
     text-align: left;
+    margin-bottom: 3%;
 }
+
+/*--------------------------*/
+/* THANK YOU PAGE */
+/*--------------------------*/
+
+.menu-thankyou{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.menu-thankyou img{
+    width: 60%;
+    margin: 3% 0 0 3%;
+}
+
+.thankyou{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 8% 10%;
+}
+
+.thankyou img{
+   width: 50%;
+   margin-left: 30%;
+}
+
+.thankyou-text{
+    display: block;
+    padding-top: 13%;
+}
+
+.thankyou-text h3{
+    margin-top: 6%;
+}
+
+.contactus{
+    margin-top: 3%;
+}
+
+.thankyou-icons{
+    padding: 3%;  
+}
+
+.thankyou-icons a{
+    color: #999796;
+}
+
+.thankyou-icons a:hover,
+.thankyou-icons a:active{
+    color: #4D4644;
+}
+
+.fa-facebook-square,
+.fa-home,
+.fa-plane-arrival{
+    padding: 3%;
+    font-size: 300%;
+}
+
