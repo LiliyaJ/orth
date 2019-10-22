@@ -55,8 +55,8 @@
     }
 
     .logo img{
-        width: 40%;
-        margin: 3% 0 0 30%;
+        width: 60%;
+        margin: 3% 0 0 20%;
     }
 
     .contacts{
@@ -145,6 +145,7 @@
     }
 
     .step p{
+        font-size: 110%;
         padding: 6% 0;
     }
 
@@ -180,6 +181,10 @@
        margin-top: 19%;
     }
 
+    .phone{
+        color: #999796;
+    }
+
     .footer-container{
         grid-template-columns: 100%;
         justify-items: center;
@@ -187,6 +192,10 @@
 
     .footer-logo img{
         margin-left: 25%;
+    }
+
+    .footer-phone{
+        color: #fff;
     }
 
     .contact,
@@ -202,14 +211,14 @@
 
     .express-form-box,
     .question-form-box{
-        top: 0;
+        top: 1%;
         margin: 0;
         width: 100vw; /* viewport width */
         height: auto; /* viewport height */
     }
 
     .check-list-form-box{
-        top: 0;
+        top: 1%;
         bottom: 0;
         width: 100vw; /* viewport width */
         height: 100vw; /* viewport height */
@@ -278,29 +287,43 @@
 
     .btn{
         font-size: 110%;
-        padding: 6% 6%;
+        padding: 3%;
     }
 
-    .hero-btn{
-        width: 80%;
-        margin-top: 9%;
+    .menu{
+        grid-template-columns: 25% 65%;
     }
 
     .contacts{
-        width: 90%;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 6%;
         font-size: 100%;
     }
 
-    .contacts{
-        grid-template-columns: repeat(2, 1fr);
+    .logo img{
+        width:90%;
+        height: auto;
+        margin: 3% 0;
     }
 
     .bookmark{
         display: none;
     }
 
+    .hero-btn{
+        width: 80%;
+        margin-top: 13%;
+    }
+
     .hero{
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 55% 45%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url(img/op.png);
+        background-position: top left;
+    }
+
+    .hero-text{
+        padding: 18% 0 16% 10%; 
     }
 
     .whyus{
@@ -345,7 +368,7 @@
     .doctor-btn{
         width: 80%;
         margin-left: 10%;
-        margin-top: 60%;
+        margin-top: 33%;
     }
 
     .steps{
@@ -354,7 +377,12 @@
 
     .steps-container .doctor-btn{
         margin: 3% 10%;
-     }
+    }
+
+    .step-btn{
+        width: 80%;
+        margin: 0 10% 6%;
+    }
 
     .js--feedback-container{
         grid-template-columns: repeat(1, 1fr);
@@ -381,8 +409,19 @@
     .fa-facebook-square,
     .fa-home,
     .fa-plane-arrival{
-    padding: 3%;
-    font-size: 300%;
+        padding: 3%;
+        font-size: 300%;
+    }
+
+    .express-form-box,
+    .question-form-box{
+        width: 80%;
+        margin-left: 10%;
+}
+
+    .check-list-form-box{
+        width: 80%;
+        margin-left: 10%;
     }
 }
 
@@ -492,7 +531,6 @@
 
     .express-form-box,
     .question-form-box{
-        top: 1%;
         width: 60%;
         margin-left: 20%;
     }

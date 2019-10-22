@@ -85,7 +85,7 @@ var model_benefit_twocol = {
 
         {
             imgSrc: 'img/benefit_05.jpg',
-            h_four: 'Всё организованно за вас',
+            h_four: 'Всё организовано за вас',
             text: 'Мы берем на себя все заботы по огранизации вашего приезда и пребывания'
         }
 
@@ -103,7 +103,7 @@ fillBenefitsTwoColHTML();
 
 /*===== Doctors List ======*/
 
-var model_doctors = {
+const model_doctors = {
 
     doctors: [
         {
@@ -113,7 +113,7 @@ var model_doctors = {
             short_description: 'Один из крупнейших мировых экспертов в области лечения колена. В его честь названа точка в колене - "точка Шёттле". Он является консультантом Ватикана по вопросам применения стволовых клеток в медицине.',
             description: 'Один из крупнейших мировых экспертов в области лечения колена. Проводит более 500 операций ежегодно. Его исследовательские труды преподаются в университете на медицинском факультете. Его инновационные методики малоинвазивной хирургии и эргономичные коленные протезы используются по всему миру. В его честь названа точка в колене - "точка Шёттле". Он является консультантом Ватикана по вопросам лечения стволовыми клетками. Среди пациентов мировые спортивные звезды. Кроме того, он очень приятный и отзывчивый человек.',
             seniority: 'Стаж: 21 год',
-            rateing: 'img/star1_1.png',
+            rating: 'img/star1_1.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 470€'
         },
@@ -125,7 +125,7 @@ var model_doctors = {
             short_description: 'Один из ведущих специалистов по лечению заболеваний позвоночника в Европе. Известен на весь мир малоинвазивными методами лечения. Большой противник излишних хирургических вмешательств.',
             description: 'Один из ведущих специалистов по лечению заболеваний позвоночника в Европе. Известен на весь мир малоинвазивными методами лечения. Большой противник излишних хирургических вмешательств. Проводит большую исследовательскую работу по болям в позвоночнике. Последователь Intervantional Pain практики. Председатель Мирового Института Боли (World Institute of Pain). Очень очень очень добрый человек.',
             seniority: 'Стаж: 28 лет',
-            rateing: 'img/star1_2.png',
+            rating: 'img/star1_2.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 590€'
         },
@@ -137,7 +137,7 @@ var model_doctors = {
             short_description: 'Блестящий хирург, специализирующийся на хирургии и протезировании тазобедренного сустава. С 2019 года вице-президент Немецкого Общества.',
             description: 'Блестящий хирург, специализирующийся на хирургии и протезировании тазобедренного сустава. С 2019 года вице-президент Немецкого Общества Тазобедренного Сустава (DHG e.V.). Знает про тазобедренный сустав все и может рассказать об этом доступным языком. Ежегодно проводит более 700 операций и протезирований. Также последователь малоинвазивных методов и противник ненужных хирургических вмешательств. Исследует новые малоинвазивные методы операции тазобедренного сустава. Очень доброжелательный и открытый человек.',
             seniority: 'Стаж: 19 лет',
-            rateing: 'img/star1_0.png',
+            rating: 'img/star1_0.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 530€'
         },
@@ -146,10 +146,10 @@ var model_doctors = {
             name: 'Доктор Э. Рембек',
             imgSrc: 'img/rembek.png',
             area: 'Спортивная травмотология',
-            short_description: 'Выдающийся спортивный хирург-травматолог. Одновременно является врачом нескольких спортивных клубов Мюнхена: TSV 1860 München, Tennis.',
+            short_description: 'Выдающийся спортивный хирург-травматолог. Одновременно является врачом нескольких спортивных клубов Мюнхена: TSV 1860 München, Tennis. Лечил министра иностранных дел РФ С.Лаврова.',
             description: 'Выдающийся спортивный хирург-травматолог. Одновременно является врачом нескольких спортивных клубов Мюнхена: TSV 1860 München, Tennis Davis Cup Teams Hedos München, EHC Red Bull München. О спортивных травмах знает все. Спортивной медициной занимается с 1987 года. Также консультирует по вопросам быстрой и эффективной реабилитации. Между прочим, лечил министра иностранных дел России господина Лаврова. Очень компетентный специалист и человек с большим сердцем.',
             seniority: 'Стаж: 29 лет',
-            rateing: 'img/star1_2.png',
+            rating: 'img/star1_2.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 530€'
         },
@@ -161,7 +161,7 @@ var model_doctors = {
             short_description: 'Если у вас боли в спине неизвестного происхождения, то вам непременно нужно познакомиться с доктором Вальтером. Блестящий специалист своего дела.',
             description: 'Если у вас боли в спине неизвестного происхождения, то вам непременно нужно познакомиться с доктором Вальтером. С 2001 года он серьезно занимается исследованием на тему терапии болей и малоинвазивной декомпрессии межпозвоночных дисков. Он помог уже более 1000 пациентов избавиться от болей в позвоночнике при помощи собственных методик и микро лазерной терапии. Член Общества регенеративной медицины, член Мирового Института Боли. Прекрасный врач, который вас слушает и слышит.',
             seniority: 'Стаж: 18 лет',
-            rateing: 'img/star1_1.png',
+            rating: 'img/star1_1.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 560€'
         },
@@ -173,7 +173,7 @@ var model_doctors = {
             short_description: 'Вы думаете все хирурги работают скальпелем. А вот и нет! Доктор Шеттле большой эксперт по биорегенеративной терапии. Он активно использует терапию стволовыми клетками.',
             description: 'Вы думаете все хирурги работают скальпелем. А вот и нет! Доктор Шеттле большой эксперт по биорегенеративной терапии. Он активно использует терапию стволовыми клетками при болях в суставах и артрозе. Конечно, при необходимости, он проводит хирургические операции, но его приоритет - вылечить без скальпеля. Очень обаятельный и любезный человек.',
             seniority: 'Стаж: 12 лет',
-            rateing: 'img/star1_1.png',
+            rating: 'img/star1_1.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 360€'
         },
@@ -185,7 +185,7 @@ var model_doctors = {
             short_description: 'Мастер в области ортопедической хирургии. Профессор проводит около 800 операций ежегодно. Неоднократно попадал в список лучших врачей Германии по версии журнала Focus.',
             description: 'Мастер в области ортопедической хирургии. Профессор проводит около 800 операций ежегодно. Неоднократно попадал в список лучших врачей Германии по версии журнала Focus. С 1991 года врач немецкой национальной горнолыжной сборной. Знает толк в плечах и в коленях. Огромнейший опыт работы со спортивными травмами. Выглядит всегда очень элегантно.',
             seniority: 'Стаж: 32 года',
-            rateing: 'img/star1_4.png',
+            rating: 'img/star1_4.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 300€'
         },
@@ -197,7 +197,7 @@ var model_doctors = {
             short_description: 'Занимается исключительно плечевыми суставами и знает об этом все. Обеспечивает полный спектр услуг по современному лечению и хирургии плечевого сустава.',
             description: 'Занимается исключительно плечевыми суставами и знает об этом все. Обеспечивает полный спектр услуг по современному лечению и хирургии плечевого сустава. Имплантация и замена плечевого сустава, артроскопическия, стабилизация плеча после вывиха, регенерация хряща. Член немецкой ассоциации хирургии плеча и локтя. Как врач и как человек - экстра-класс.',
             seniority: 'Стаж: 17 лет',
-            rateing: 'img/star1_0.png',
+            rating: 'img/star1_0.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 360€'
         },
@@ -206,10 +206,10 @@ var model_doctors = {
             name: 'Доктор Б. Лукас',
             imgSrc: 'img/lukas.png',
             area: 'Лечение и хирургия рук',
-            short_description: 'Филигранный мастер в хирургии кистей и рук. Возращает не только здоровьем вашим кистям, но и красоту. Совмещает травматическую и пластическую хиурургии кистей.',
+            short_description: 'Филигранный мастер в хирургии кистей и рук. Возращает не только здоровьем, но и красоту вашим рукам. Совмещает травматическую и пластическую хиурургии кистей.',
             description: 'Филигранный мастер в хирургии кистей и рук. Возращает не только здоровьем вашим кистям, но и красоту. Совмещает травматическую и пластическую хиурургии кистей. С 1989 года занимается лечением травм рук и восстановлением кистей рук. Его любимые слова: "в тишине сила", характеризуют его личность. Он спокойный и большой. Очень любит людей и относится к пациентам, как к своим близким.',
             seniority: 'Стаж: 29 лет',
-            rateing: 'img/star1_4.png',
+            rating: 'img/star1_4.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 320€'
         } ,
@@ -221,7 +221,7 @@ var model_doctors = {
             short_description: 'Доктор Лених выглядит моложе, чем есть на самом деле, и любит иногда пошутить на эту тему с пациентами, притворившись практикантом. Его послужной список огромен.',
             description: 'Доктор Лених выглядит моложе, чем есть на самом деле, и любит иногда пошутить на эту тему с пациентами, притворившись практикантом. Его послужной список очень большой. Он знает толк в быстром и эффективном восстановлении после операции. Если вам нужна операция в пятницу, а выход на работу в понедельник, вам к доктору Лениху. Но он не только выдающийся хирург-травматолог, но и очень веселый и жизнерадостный человек.',
             seniority: 'Стаж: 19 лет',
-            rateing: 'img/star1_1.png',
+            rating: 'img/star1_1.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 360€'
         },
@@ -232,8 +232,8 @@ var model_doctors = {
             area: 'Лечение и хирургия ступней, голеностопов, вальгусной деформации пальца стопы',
             short_description: 'Хотите бегать, прыгать, заниматься спортом без болей в голеностопе? Вам к доктору Кинаст. Поклонник малоинвазивных методик.',
             description: 'Хотите бегать, прыгать, заниматься спортом без болей в голеностопе? Вам к доктору Кинаст. Он расскажет вам все как есть, отговорит от операции, если она не нужна и предложит другой метод лечения, или проведет хирургическую операцию. Поклонник малоинвазивных методик. Его работа не заканчивается проведением операции. Он обязательно убедится, что вы без болей и жалоб можете продолжать свою ежедневную жизнь. К пациентам относится очень внимательно. Более 35 лет возвращает людям возможность безболезненно бегать, прыгать, заниматься спортом, играть в футбол.',
-            seniority: 'Стаж: 30 лет',
-            rateing: 'img/star1_4.png',
+            seniority: 'Стаж: 35 лет',
+            rating: 'img/star1_4.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 380€'
         },
@@ -245,7 +245,7 @@ var model_doctors = {
             short_description: 'С 1982 года специализируется на хирургии плечевых суставов. В 1984 основывает первый в Германии центр по хирургии плеча. В настоящий момент специалист мирового уровня в хирургии плечевого и локтевого сустава.',
             description: 'С 1982 года специализируется на хирургии плечевых суставов. В 1984 основывает первый в Германии центр по хирургии плеча. В настоящий момент специалист мирового уровня в хирургии плечевого и локтевого сустава. Занимается протезированием, артроскопией, лечение артроза. Важнейшим пунктом считает точную диагностику, обдуманную технику операции и надежную реабилитацию. Очень серьезно относится к работе.',
             seniority: 'Стаж: 36 лет',
-            rateing: 'img/star1_2.png',
+            rating: 'img/star1_2.png',
             feedbacks: 'Основан на 138 отзывах',
             price: 'Цена от 380€'
         }
@@ -261,17 +261,16 @@ fillDoctorsHTML = (doctors = model_doctors.doctors)=>{
 
 createDoctorHTML = (doctor) => {
     const li = document.createElement('li');
-
-    const name = document.createElement('h4');
-    name.innerHTML = doctor.name;
+    li.className = 'doctor-block ' + doctor.name;
   
     const image = document.createElement('img');
     image.className = 'doctor-img';
     image.src = doctor.imgSrc;
-    image.alt = "Фото доктора " + name;
+    image.alt = "Фото доктора " + doctor.name;
     li.append(image);
 
-    
+    const name = document.createElement('h4');
+    name.innerHTML = doctor.name;
     li.append(name);
 
     const area = document.createElement('h5');
@@ -287,10 +286,19 @@ createDoctorHTML = (doctor) => {
     seniority.className = 'doctor-seniority';
     li.append(seniority);
 
+    const div = document.createElement('div');
+    div.className = 'rating-box'
+
+    const rating = document.createElement('span')
+    rating.innerHTML = 'Рейтинг: '
+    div.append(rating);
+
     const star = document.createElement('img');
     star.className = 'doctor-star';
-    star.src = doctor.rateing;
-    li.append(star);
+    star.src = doctor.rating;
+    div.append(star);
+
+    li.append(div);
 
     const price = document.createElement('p');
     price.innerHTML = doctor.price;
@@ -302,6 +310,86 @@ createDoctorHTML = (doctor) => {
 
 fillDoctorsHTML();
 
+/*===== Doctor PopUp ======*/
+
+let popup = document.querySelector('.js--doctors-popup')
+ 
+fillDoctorsPopupHTML = ()=>{
+    doctor => {
+        popup.append(createDoctorPopupHTML(doctor));
+    };
+}
+
+createDoctorPopupHTML = (doctor) => {
+    popup.style.display = 'block'
+
+    const div = document.createElement('div')
+    div.className = 'to-remove'
+    clearDoctorPopupHTML();
+
+    const name = document.createElement('h4');
+    name.innerHTML = doctor.name;
+    div.append(name);
+
+    const area = document.createElement('h5');
+    area.innerHTML = doctor.area;
+    div.append(area);
+   
+    const full_text = document.createElement('p');
+    full_text.innerHTML = doctor.description;
+    div.append(full_text);
+
+    popup.append(div);
+
+    return popup
+}
+
+clearDoctorPopupHTML = () => {
+   const elementsToRemove = document.querySelectorAll('.to-remove');
+    elementsToRemove.forEach(element => { 
+        element.remove()})
+}
+
+
+document.addEventListener('click', function(){
+    if (event.target.closest('.doctor-block')){
+        if(event.target.closest('.Шёттле')){
+            createDoctorPopupHTML(model_doctors.doctors[0]);
+        }else if(event.target.closest('.Марианович'))  {
+            createDoctorPopupHTML(model_doctors.doctors[1]);
+        }else if(event.target.closest('.Гольвитцер'))  {
+            createDoctorPopupHTML(model_doctors.doctors[2]);
+        }else if(event.target.closest('.Рембек'))  {
+            createDoctorPopupHTML(model_doctors.doctors[3]);
+        }else if(event.target.closest('.Вальтер'))  {
+            createDoctorPopupHTML(model_doctors.doctors[4]);
+        }else if(event.target.closest('.Шеттле'))  {
+            createDoctorPopupHTML(model_doctors.doctors[5]);
+        }else if(event.target.closest('.Майр'))  {
+            createDoctorPopupHTML(model_doctors.doctors[6]);
+        }else if(event.target.closest('.Таубер'))  {
+            createDoctorPopupHTML(model_doctors.doctors[7]);
+        }else if(event.target.closest('.Лукас'))  {
+            createDoctorPopupHTML(model_doctors.doctors[8]);
+        }else if(event.target.closest('.Лених'))  {
+            createDoctorPopupHTML(model_doctors.doctors[9]);
+        }else if(event.target.closest('.Кинаст'))  {
+            createDoctorPopupHTML(model_doctors.doctors[10]);
+        }else if(event.target.closest('.Хебермейр'))  {
+            createDoctorPopupHTML(model_doctors.doctors[11]);
+        }
+    }
+})
+
+document.addEventListener('click', function(){
+    if (event.target.matches('.close-doc-poup')){
+        popup.style.display = 'none';
+    }
+})
+
+fillDoctorsPopupHTML();
+
+
 /*===== Feedback ======*/
 
 var model_feedbacks = {
@@ -311,7 +399,7 @@ var model_feedbacks = {
             quote: 'Здравствуйте! Меня зовут Терри Чор. Раньше у меня были очень серьезные проблемы с коленями. Они опухали до такой степени, что я не мог ни ходить, ни тем более кататься на лыжах, рыбачить и заниматься другими привычными для меня вещами. Друг посоветовал мне обратиться к доктору Филипу Шёттле, который занимается лечением коленей стволовыми клетками. Я отправился в Мюнхен и всего за один день прошел лечение. После операции и курса поддерживающих упражнений мои колени почти полностью восстановились. Операция была очень простой и совершенно безболезненной, и проведена очень профессионально. Спасибо!',
             pic: 'img/bewertung03.png',
             name:'@Терри Чор, 51 год, Нью-Йорк.',
-            diagnose:'Диагноз: Артороз обоих коленей. Не мог ходить.'
+            diagnose:'Диагноз: Артроз обоих коленей. Не мог ходить.'
         },
 
         {
@@ -368,3 +456,33 @@ createFeedbackHTML = (feedback) =>{
 
 fillFeedbackHTML();
 
+/*====== Bookmark ======*/
+
+function getBrowserInfo() {
+    var t,v = undefined;
+    if (window.chrome) t = 'Chrome';
+    else if (window.opera) t = 'Opera';
+    else if (document.all) {
+        t = 'IE';
+        var nv = navigator.appVersion;
+        var s = nv.indexOf('MSIE')+5;
+        v = nv.substring(s,s+1);
+    }
+    else if (navigator.appName) t = 'Netscape';
+    return {type:t,version:v};
+}
+function bookmark(a){
+    var url = window.document.location;
+    var title = window.document.title;
+    var b = getBrowserInfo();
+    if (b.type == 'IE' && 8 >= b.version && b.version >= 4) window.external.AddFavorite(url,title);
+    else if (b.type == 'Opera') {
+        a.href = url;
+        a.rel = "sidebar";
+        a.title = url+','+title;
+        return true;
+    }
+    else if (b.type == "Netscape") window.sidebar.addPanel(title,url,"");
+    else alert("Нажмите CTRL-D, чтобы добавить страницу в закладки.");
+    return false;
+}

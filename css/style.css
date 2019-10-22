@@ -236,7 +236,7 @@ h5{
 
 .benefit-img{
     width: 100%;
-    height: auto;
+    max-height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -380,7 +380,7 @@ h5{
 }
 
 .js--doctors li{
-    display: block;
+    display: grid;
     background-color: #fff;
     border-radius: .6em;
     -webkit-border-radius: .6em;
@@ -388,6 +388,12 @@ h5{
     -ms-border-radius: .6em;
     -o-border-radius: .6em;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    cursor: pointer;
+}
+
+.doctor-block:hover,
+.doctor-block:active{
+ background-color: #f0faff;
 }
 
 .doctor-img{
@@ -400,7 +406,7 @@ h5{
 .js--doctors h4,
 .js--doctors h5,
 .js--doctors p,
-.doctor-star{
+.rating-box{
     padding: 0 8%;
 }
 
@@ -418,7 +424,7 @@ h5{
 }
 
 .doctor-star{
-    width: 46%;
+    width: 60%;
     height: auto;
 }
 
@@ -436,10 +442,55 @@ h5{
     margin-bottom: 2%;
 }
 
+.rating-box{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+
 .doctor-btn{
     width: 60%;
     margin-left: 20%;
-    margin-top: 16%;
+    margin-top: 6%;
+    padding: 3% 0;
+}
+
+/*==== Doctors popup ====*/
+
+.js--doctors-popup{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 15%;
+    width:80%;
+    height:auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #f0faff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    padding: 3%;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    margin-left: 5%;
+}
+
+.js--doctors-popup h4,
+.js--doctors-popup h5{
+    margin-bottom: 2%;
+}
+
+.js--doctors-popup p{
+    font-size: 110%;
+}
+
+.close-doc-poup{
+    display: block;
+    color: #999796;
+    font-weight: 600;
+    text-align: right;
 }
 
 /*--------------------------*/
@@ -564,7 +615,7 @@ h5{
 }
 
 /*--------------------------*/
-/* FEEDBACK */
+/* REVIEWS */
 /*--------------------------*/
 
 .feedback-section{
@@ -628,6 +679,11 @@ h5{
     font-size: 120%;
 }
 
+.add_fav{
+    color: #e69e6c;
+    font-weight: 600;
+ }
+
 /*--------------------------*/
 /* FOOTER */
 /*--------------------------*/
@@ -674,6 +730,29 @@ h5{
 /* FORMS */
 /*--------------------------*/
 
+.close-icon{
+  display:block;
+  position: fixed;
+  margin-left: -6.3%;
+  margin-top: -6.3%;
+  z-index: 2;
+  box-sizing:border-box;
+  width:30px;
+  height:30px;
+  border-width:6px;
+  border-style: solid;
+  border-color: #4D4644;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+  background-color:#4D4644;
+  box-shadow:0px 0px 3px 1px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
 .express-form-box,
 .question-form-box,
 .check-list-form-box{
@@ -688,23 +767,24 @@ h5{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     position: fixed;
     z-index: 0;
-    position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #f0faff;
 }
+.express-form-box,
+.question-form-box,
+.check-list-form-box{
+    padding: 6%;
+    top: 3%;
+}
 
 .express-form-box,
 .question-form-box{
-    padding: 6%;
-    top: 10%;
     width: 40%;
     margin-left: 30%;
 }
 
 .check-list-form-box{
-    padding: 3%;
-    top: 0;
     width: 60%;
     margin-left: 20%;
 }
