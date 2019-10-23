@@ -262,6 +262,10 @@ h5{
     padding: 3% 6%;
 }
 
+.js--whyus-twocol{
+    display: none;
+}
+
 .js--whyus-format li{
     background-color: #fff;
     border-radius: 16px;
@@ -408,6 +412,14 @@ h5{
 .js--doctors p,
 .rating-box{
     padding: 0 8%;
+}
+
+.js--doctors h5{
+    color: #e69e6c;
+}
+
+.js--doctors h4{
+    color: #97827a;
 }
 
 .js--doctors p{
@@ -733,8 +745,8 @@ h5{
 .close-icon{
   display:block;
   position: fixed;
-  margin-left: -6.3%;
-  margin-top: -6.3%;
+  margin-left: -6%;
+  margin-top: -6%;
   z-index: 2;
   box-sizing:border-box;
   width:30px;
