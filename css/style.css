@@ -468,7 +468,7 @@ h5{
 }
 
 /*==== Doctors popup ====*/
-
+/*
 .js--doctors-popup{
     display: none;
     position: fixed;
@@ -488,7 +488,7 @@ h5{
     -o-border-radius: 18px;
     margin-left: 5%;
 }
-
+*/
 .js--doctors-popup h4,
 .js--doctors-popup h5{
     margin-bottom: 2%;
@@ -784,12 +784,14 @@ h5{
   -o-border-radius: 100%;
 }
 
+
+
 .express-form-box,
 .question-form-box,
-.check-list-form-box{
+.check-list-form-box,
+.js--doctors-popup{
     display: none;
     justify-self: center;
-    text-align: center;
     border-radius: 18px;
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
@@ -801,12 +803,14 @@ h5{
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #f0faff;
+    padding: 6%;
+    top: 3%;
 }
+
 .express-form-box,
 .question-form-box,
 .check-list-form-box{
-    padding: 6%;
-    top: 3%;
+    text-align: center;
 }
 
 .express-form-box,
