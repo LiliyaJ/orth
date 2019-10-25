@@ -496,6 +496,7 @@ h5{
 
 .js--doctors-popup p{
     font-size: 110%;
+    text-align: justify;
 }
 
 .close-doc-poup{
@@ -503,6 +504,24 @@ h5{
     color: #999796;
     font-weight: 600;
     text-align: right;
+}
+
+.to-remove{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-column-gap: 3%; 
+}
+
+.jm-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); 
 }
 
 /*--------------------------*/

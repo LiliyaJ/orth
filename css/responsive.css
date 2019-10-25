@@ -134,6 +134,16 @@
         margin-top: 10%;
     }
 
+    .to-remove{
+        grid-template-columns: 100%;
+        grid-row-gap: 3%; 
+    }
+
+    .jm-img{
+        width: 80%;
+        margin-left: 10%;
+    }
+
     .doctor-btn{
         width: 80%;
         margin-left: 10%;
@@ -371,6 +381,16 @@
 
     .js--doctors ul{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .to-remove{
+        grid-template-columns: 100%;
+        grid-row-gap: 3%;
+        padding: 3%;
+    }
+
+    .jm-img{
+        width: 50%;
     }
 
     .doctor-btn{
