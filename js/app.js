@@ -259,6 +259,17 @@ fillDoctorsHTML = (doctors = model_doctors.doctors)=>{
     });
 }
 
+getDoctorName = (doctor) => {
+    let doc_name_arr = doctor.name;
+    for(i=doc_name_arr.length; i>=0; i--){
+        let letter = doc_name_arr[i];
+        if (letter === ' '){
+            const doc_name = doc_name_arr.slice(i+1, doc_name_arr.length);
+            return doc_name;
+        }
+    }
+}
+
 createDoctorHTML = (doctor) => {
     const li = document.createElement('li');
     li.className = 'doctor-block ' + doctor.name;
@@ -305,6 +316,12 @@ createDoctorHTML = (doctor) => {
     price.className = 'doctor-price';
     li.append(price);
   
+    const btn = document.createElement('a')
+    btn.href = "javascript:void(0)"
+    btn.className = 'btn doc-btn'
+    btn.innerHTML = 'Расчитать стоимость лечения у доктора ' + getDoctorName(doctor);
+    li.append(btn);
+
     return li
   }
 
@@ -359,7 +376,7 @@ clearDoctorPopupHTML = () => {
 
 
 document.addEventListener('click', function(){
-    if (event.target.closest('.doctor-block')){
+    if (event.target.closest('.doctor-block') && !event.target.matches('.btn')){
         if(event.target.closest('.Шёттле')){
             createDoctorPopupHTML(model_doctors.doctors[0]);
         }else if(event.target.closest('.Марианович'))  {
@@ -389,7 +406,7 @@ document.addEventListener('click', function(){
 })
 
 document.addEventListener('click', function(){
-    if (event.target.matches('.close-doc-poup')){
+    if (event.target.matches('.close-doc-popup')){
         popup.style.display = 'none';
     }
 })

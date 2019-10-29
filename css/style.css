@@ -253,6 +253,11 @@ h5{
     margin: 3% 0 6% 31%;
 }
 
+.container-btn p,
+.container-btn h2{
+    text-align: center;
+}
+
 .whyus-container h3{
     margin-top: 10%;
 }
@@ -467,28 +472,15 @@ h5{
     padding: 3% 0;
 }
 
-/*==== Doctors popup ====*/
-/*
-.js--doctors-popup{
-    display: none;
-    position: fixed;
-    z-index: 2;
-    top: 15%;
-    width:80%;
-    height:auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: #f0faff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    padding: 3%;
-    border-radius: 18px;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    -ms-border-radius: 18px;
-    -o-border-radius: 18px;
-    margin-left: 5%;
+.doctor-btn p,
+.doctor-btn h2{
+    text-align: center;
 }
-*/
+
+.doc-btn{
+    margin: 0 6% 6%;
+}
+
 .js--doctors-popup h4,
 .js--doctors-popup h5{
     margin-bottom: 2%;
@@ -499,7 +491,7 @@ h5{
     text-align: justify;
 }
 
-.close-doc-poup{
+.close-doc-popup{
     display: block;
     color: #999796;
     font-weight: 600;
@@ -707,7 +699,14 @@ h5{
 .feedback-container h2,
 .feedback-container p{
     text-align: center;
+}
+
+.feedback-container p{
     font-size: 120%;
+}
+
+.feedback-container h2{
+    font-size: 180%;
 }
 
 .add_fav{
@@ -762,29 +761,27 @@ h5{
 /*--------------------------*/
 
 .close-icon{
-  display:block;
-  position: fixed;
-  margin-left: -6%;
-  margin-top: -6%;
-  z-index: 2;
-  box-sizing:border-box;
-  width:30px;
-  height:30px;
-  border-width:6px;
-  border-style: solid;
-  border-color: #4D4644;
-  border-radius: 100%;
-  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
-  background-color:#4D4644;
-  box-shadow:0px 0px 3px 1px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
+    display:block;
+    position: fixed;
+    margin-left: -6%;
+    margin-top: -6%;
+    z-index: 2;
+    box-sizing:border-box;
+    width:30px;
+    height:30px;
+    border-width:6px;
+    border-style: solid;
+    border-color: #4D4644;
+    border-radius: 100%;
+    background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+    background-color:#4D4644;
+    box-shadow:0px 0px 3px 1px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
-
-
 
 .express-form-box,
 .question-form-box,
@@ -805,6 +802,10 @@ h5{
     background-color: #f0faff;
     padding: 6%;
     top: 3%;
+}
+
+.js--doctors-popup{
+    margin-left: -5%;
 }
 
 .express-form-box,
