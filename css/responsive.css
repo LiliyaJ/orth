@@ -220,11 +220,12 @@
     }
 
     .js--doctors-popup{
-        top:2%;
         padding: 6%;
-        margin-left: -5%;
-        width: 100vw; /* viewport width */
-        height: auto; /* viewport height */
+        margin-left: 0;
+        top:0;
+        left:0;
+        bottom: 0;
+        right: 0;
     }
 
     .express-form-box,

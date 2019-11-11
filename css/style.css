@@ -415,7 +415,8 @@ h5{
 .js--doctors h4,
 .js--doctors h5,
 .js--doctors p,
-.rating-box{
+.rating-box,
+.read-more{
     padding: 0 8%;
 }
 
@@ -436,6 +437,10 @@ h5{
     padding-top: 4%;
 }
 
+.read-more{
+    font-weight: 600;
+}
+
 .doctor-price{
     margin-bottom: 8%;
 }
@@ -446,8 +451,7 @@ h5{
 }
 
 .doctor-seniority{
-    margin-top: 8%;
-    
+    margin-top: 8%;   
 }
 
 .js--doctors h5{
@@ -798,11 +802,12 @@ h5{
     position: fixed;
     z-index: 0;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: auto;
     background-color: #f0faff;
     padding: 6%;
-    top: 3%;
+    top: 1%;
 }
+
 
 .js--doctors-popup{
     margin-left: -5%;
@@ -821,6 +826,10 @@ h5{
 }
 
 .check-list-form-box{
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
     width: 60%;
     margin-left: 20%;
 }

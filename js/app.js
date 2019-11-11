@@ -292,6 +292,12 @@ createDoctorHTML = (doctor) => {
     text.innerHTML = doctor.short_description;
     li.append(text);
 
+    const read_more = document.createElement('a');
+    read_more.href = "javascript:void(0)"
+    read_more.innerHTML = "Подробнее..."
+    read_more.className = 'read-more'
+    li.append(read_more);
+
     const seniority = document.createElement('p');
     seniority.innerHTML = doctor.seniority;
     seniority.className = 'doctor-seniority';
@@ -315,13 +321,13 @@ createDoctorHTML = (doctor) => {
     price.innerHTML = doctor.price;
     price.className = 'doctor-price';
     li.append(price);
-  
+  /*
     const btn = document.createElement('a')
     btn.href = "javascript:void(0)"
     btn.className = 'btn doc-btn'
     btn.innerHTML = 'Расчитать стоимость лечения у доктора ' + getDoctorName(doctor);
     li.append(btn);
-
+*/
     return li
   }
 
@@ -376,7 +382,7 @@ clearDoctorPopupHTML = () => {
 
 
 document.addEventListener('click', function(){
-    if (event.target.closest('.doctor-block') && !event.target.matches('.btn')){
+    if (event.target.closest('.doctor-block')){
         if(event.target.closest('.Шёттле')){
             createDoctorPopupHTML(model_doctors.doctors[0]);
         }else if(event.target.closest('.Марианович'))  {
